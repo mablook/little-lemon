@@ -1,0 +1,80 @@
+:root {
+    --color-primary: #5c6ac4;
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --font-weight-bold: 700;
+    --border-radius: 8px;
+    font-size: 62.5%;
+  }
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Assuming you defined your theme's colors and font settings as CSS variables somewhere globally */
+body {
+  background-color: var(--color-white);
+  color: var(--color-black);
+  -webkit-font-smoothing: antialiased;
+}
+
+body, input, button, textarea {
+  font-family: var(--font-family-secondary);
+  font-size: var(--font-size-small);
+  outline: none;
+}
+
+h1, h2, .card-title {
+  font-family: var(--font-family-primary);
+}
+
+h1 {
+  font-size: var(--font-size-huge);
+  font-weight: var(--font-weight-medium);
+}
+
+h2 {
+  font-size: var(--font-size-xlarge);
+  font-weight: var(--font-weight-regular);
+}
+
+h3 {
+  font-size: var(--font-size-large);
+  font-weight: var(--font-weight-extrabold);
+  text-transform: uppercase;
+}
+
+h4 {
+  font-size: var(--font-size-medium);
+  font-weight: var(--font-weight-extrabold);
+}
+
+.lead-txt {
+  font-weight: var(--font-weight-medium);
+}
+
+.highlight {
+  font-weight: var(--font-weight-medium);
+}
+
+.card-title {
+  font-size: var(--font-size-medium);
+  font-weight: var(--font-weight-bold);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button, a, input[type="submit"] {
+  cursor: pointer;
+  transition: filter 0.2s;
+}
+
+button:hover, a:hover, input[type="submit"]:hover {
+  filter: brightness(0.9);
+}

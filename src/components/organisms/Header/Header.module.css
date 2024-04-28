@@ -1,0 +1,33 @@
+.container {
+    width: 100%;
+    height: 12.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform .3s ease-in-out;
+    position: fixed;
+    top: 0;
+    align-self: center;
+    background-color: white;
+    padding: 0 7rem;
+    z-index: 10;
+  }
+  @media (max-width: 768px) {
+    .container {
+      height: 8rem;
+      padding: 0 3rem;
+    }
+  }
+  .content {
+    width: 66%;
+  }
+  @media (max-width: 1120px) {
+    .content {
+      width: 90%;
+    }
+  }
+  @media (max-width: 768px) {
+    .content {
+      height: 9rem;
+    }
+  }
