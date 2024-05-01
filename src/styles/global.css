@@ -1,9 +1,35 @@
 :root {
-    --color-primary: #5c6ac4;
-    --color-white: #ffffff;
-    --color-black: #000000;
-    --font-weight-bold: 700;
-    --border-radius: 8px;
+  /* Color Variables */
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-primary: #495E57;
+  --color-secondary: #F4CE14;
+  --color-tertiary: #EE9972;
+  --color-quaternary: #FBDABB;
+  --color-highlight-light: #EDEDEE;
+  --color-highlight-dark: #333333;
+
+  /* Border Variables */
+  --border-radius: 1.6rem;
+
+  /* Font-Family Variables */
+  --font-family-primary: 'Markazi Text', serif;
+  --font-family-secondary: 'Karla', sans-serif;
+
+  /* Font-Weight Variables */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+
+  /* Font-Size Variables */
+  --font-size-small: 1.6rem;
+  --font-size-medium: 1.8rem;
+  --font-size-large: 2.0rem;
+  --font-size-xlarge: 4.0rem;
+  --font-size-xxlarge: 5.2rem;
+  --font-size-huge: 6.4rem;
+
     font-size: 62.5%;
   }
 
