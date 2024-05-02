@@ -28,20 +28,20 @@
   }
   
   .content h1 {
-    color: var(--color-primary); /* Define the variable in global.css */
+    color: var(--color-primary);
     width: 28rem;
     line-height: 45px;
   }
   
   .content h2 {
-    color: var(--color-tertiary); /* Define the variable in global.css */
+    color: var(--color-tertiary); 
     width: fit-content;
   }
   
   .content p {
     max-width: 28rem;
     margin: 2rem 0;
-    color: var(--color-primary); /* Define the variable in global.css */
+    color: var(--color-primary); 
   }
   
   @media (max-width: 966px) {

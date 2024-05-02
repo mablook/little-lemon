@@ -58,6 +58,12 @@
       flex-wrap: wrap;
     }
   }
+
+  @media (max-width: 840px) {
+    .container::before {
+      min-height: inherit;
+    }
+  }
   
   @media (max-width: 606px) {
     .cards {
