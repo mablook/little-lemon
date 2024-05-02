@@ -1,4 +1,3 @@
-/* ConfirmedBooking.module.css */
 .container {
   width: 66%;
   height: auto;
@@ -52,15 +51,15 @@
   width: 100%;
   max-width: 400px;
   gap: 20px;
-  font-size: 1.8rem; /* Example theme font size medium */
-  color: #ffffff; /* Example theme color white */
-  background-color: #495E57; /* Example theme color primary */
+  font-size: var(--font-size-medium);
+  color: var(--color-white); 
+  background-color: var(--color-primary); 
   padding: 2rem;
-  border-radius: 5px; /* Example theme border radius */
+  border-radius: var(--border-radius);
 }
 
 .confirmation h2 {
-  color: #ebc713; /* Example theme color secondary */
+  color: var(--color-secondary); 
 }
 
 .confirmation span {

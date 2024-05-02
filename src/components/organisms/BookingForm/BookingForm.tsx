@@ -20,12 +20,11 @@ interface BookingFormProps {
 const BookingForm: React.FC<BookingFormProps> = ({ availableTimes, dispatch, initialValues, ...props }) => {
   const navigate = useNavigate();
 
-  // Setup initial values using provided initialValues or defaults
   const initialFormValues = initialValues || {
-    date: new Date().toLocaleDateString("en-CA"),
-    time: availableTimes.times[0],
-    guests: 1,
-    occasion: "birthday",
+    date: '',
+    time: '',
+    guests: 0,
+    occasion: '',
   };
 
   const formik = useFormik({
@@ -61,6 +60,7 @@ const BookingForm: React.FC<BookingFormProps> = ({ availableTimes, dispatch, ini
 
         <label htmlFor="res-time">Choose time</label>
         <select className={styles.select} id="res-time" {...formik.getFieldProps('time')}>
+        <option value="">Select time</option>
           {availableTimes.times.map((time) => (
             <option key={time} value={time}>{time}</option>
           ))}
@@ -68,11 +68,12 @@ const BookingForm: React.FC<BookingFormProps> = ({ availableTimes, dispatch, ini
         {formik.touched.time && formik.errors.time && <span className={styles.formMessageError}>{formik.errors.time}</span>}
 
         <label htmlFor="guests">Number of guests</label>
-        <input type="number" className={styles.input} placeholder="1" min="1" max="10" id="guests" {...formik.getFieldProps('guests')} />
+        <input type="number" className={styles.input} min="1" max="10" id="guests" placeholder="Enter number of guests" {...formik.getFieldProps('guests')} />
         {formik.touched.guests && formik.errors.guests && <span className={styles.formMessageError}>{formik.errors.guests}</span>}
 
         <label htmlFor="occasion">Occasion</label>
         <select className={styles.select} id="occasion" {...formik.getFieldProps('occasion')}>
+          <option value="">Select occasion</option>
           <option value="birthday">Birthday</option>
           <option value="engagement">Engagement</option>
           <option value="anniversary">Anniversary</option>
