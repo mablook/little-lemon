@@ -1,0 +1,107 @@
+:root {
+  /* Color Variables */
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-primary: #495E57;
+  --color-secondary: #ebc713;
+  --color-tertiary: #EE9972;
+  --color-quaternary: #FBDABB;
+  --color-highlight-light: #EDEDEE;
+  --color-highlight-dark: #333333;
+
+  /* Border Variables */
+  --border-radius: 5px;
+  --border-card-radius: 20px;
+
+  /* Font-Family Variables */
+  --font-family-primary: 'Markazi Text', serif;
+  --font-family-secondary: 'Karla', sans-serif;
+
+  /* Font-Weight Variables */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+
+  /* Font-Size Variables */
+  --font-size-small: 1.6rem;
+  --font-size-medium: 1.8rem;
+  --font-size-large: 2.0rem;
+  --font-size-xlarge: 4.0rem;
+  --font-size-xxlarge: 5.2rem;
+  --font-size-huge: 6.4rem;
+
+    font-size: 62.5%;
+  }
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  background-color: var(--color-white);
+  color: var(--color-black);
+  -webkit-font-smoothing: antialiased;
+}
+
+body, input, button, textarea, h1, h2, h3, h4{
+  font-family: var(--font-family-secondary);
+  font-size: var(--font-size-small);
+  outline: none;
+}
+
+.card-title {
+  font-family: var(--font-family-primary);
+}
+
+h1 {
+  font-size: var(--font-size-huge);
+  font-weight: var(--font-weight-medium);
+}
+
+h2 {
+  font-size: var(--font-size-xlarge);
+  font-weight: var(--font-weight-regular);
+}
+
+h3 {
+  font-size: var(--font-size-large);
+  font-weight: var(--font-weight-extrabold);
+  text-transform: uppercase;
+}
+
+h4 {
+  font-size: var(--font-size-medium);
+  font-weight: var(--font-weight-extrabold);
+}
+
+.lead-txt {
+  font-weight: var(--font-weight-medium);
+}
+
+.highlight {
+  font-weight: var(--font-weight-medium);
+}
+
+.card-title {
+  font-size: var(--font-size-medium);
+  font-weight: var(--font-weight-bold);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button, a, input[type="submit"] {
+  cursor: pointer;
+  transition: filter 0.2s;
+}
+
+button:hover, a:hover, input[type="submit"]:hover {
+  filter: brightness(0.9);
+}

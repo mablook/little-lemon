@@ -1,0 +1,68 @@
+/* ConfirmedBooking.module.css */
+.container {
+  width: 66%;
+  height: auto;
+  min-height: 60rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4.3rem;
+  margin-top: 12.8rem;
+}
+
+.container > button {
+  max-width: 400px;
+}
+
+@media (max-width: 1120px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    margin-top: 9rem;
+  }
+}
+
+.top {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+@media (max-width: 840px) {
+  .top {
+    flex-direction: column;
+  }
+
+  .top h1 {
+    text-align: center;
+  }
+}
+
+.confirmation {
+  display: grid;
+  width: 100%;
+  max-width: 400px;
+  gap: 20px;
+  font-size: 1.8rem; /* Example theme font size medium */
+  color: #ffffff; /* Example theme color white */
+  background-color: #495E57; /* Example theme color primary */
+  padding: 2rem;
+  border-radius: 5px; /* Example theme border radius */
+}
+
+.confirmation h2 {
+  color: #ebc713; /* Example theme color secondary */
+}
+
+.confirmation span {
+  text-transform: capitalize;
+}

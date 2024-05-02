@@ -1,0 +1,55 @@
+.container {
+    width: 250px;
+    color: var(--color-black);
+    background-color: var(--color-white);
+    border-radius: var(--border-radius);
+    padding: 2.6rem 2.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .rating {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    gap: .5rem;
+    font-size: x-large;
+  }
+  
+  .customer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .customer img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .customerHighlight {
+    font-weight: bold; /* Adjust to use the correct value from the theme or direct CSS value */
+  }
+  
+  .testimonial {
+    width: 100%;
+    height: auto;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  
+  .testimonial::before {
+    content: open-quote;
+  }
+  
+  .testimonial::after {
+    content: close-quote;
+  }
+  
