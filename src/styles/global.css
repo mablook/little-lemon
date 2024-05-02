@@ -3,14 +3,15 @@
   --color-black: #000000;
   --color-white: #ffffff;
   --color-primary: #495E57;
-  --color-secondary: #F4CE14;
+  --color-secondary: #ebc713;
   --color-tertiary: #EE9972;
   --color-quaternary: #FBDABB;
   --color-highlight-light: #EDEDEE;
   --color-highlight-dark: #333333;
 
   /* Border Variables */
-  --border-radius: 1.6rem;
+  --border-radius: 5px;
+  --border-card-radius: 20px;
 
   /* Font-Family Variables */
   --font-family-primary: 'Markazi Text', serif;
@@ -40,20 +41,20 @@
   box-sizing: border-box;
 }
 
-/* Assuming you defined your theme's colors and font settings as CSS variables somewhere globally */
+
 body {
   background-color: var(--color-white);
   color: var(--color-black);
   -webkit-font-smoothing: antialiased;
 }
 
-body, input, button, textarea {
+body, input, button, textarea, h1, h2, h3, h4{
   font-family: var(--font-family-secondary);
   font-size: var(--font-size-small);
   outline: none;
 }
 
-h1, h2, .card-title {
+.card-title {
   font-family: var(--font-family-primary);
 }
 

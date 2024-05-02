@@ -1,6 +1,5 @@
 .container {
-    width: 20rem;
-    height: 40.5rem;
+    width: 250px;
     color: var(--color-black);
     background-color: var(--color-white);
     border-radius: var(--border-radius);
@@ -16,6 +15,7 @@
     display: flex;
     justify-content: flex-start;
     gap: .5rem;
+    font-size: x-large;
   }
   
   .customer {

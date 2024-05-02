@@ -1,7 +1,7 @@
 import { FC } from "react";
 import styles from "./LocationSection.module.css";
-import Mario_and_Adrian_A from "../../../assets/Mario_and_Adrian_A.jpg";
-import Mario_and_Adrian_B from "../../../assets/Mario_and_Adrian_B.jpg";
+import chef1 from "../../../assets/people/01.png";
+import chef2 from "../../../assets/people/02.png";
 
 const LocationSection: FC = () => {
   return (
@@ -10,15 +10,15 @@ const LocationSection: FC = () => {
         <h1>Little Lemon</h1>
         <h2>Chicago</h2>
         <p className={styles.leadTxt}>
-          Little Lemon is owned by two Italian brothers, Mario and Adrian, who moved to the United States to pursue their shared dream of owning a restaurant.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
         </p>
         <p className={styles.leadTxt}>
-          To craft the menu, Mario relies on family recipes and his experience as a chef in Italy. Adrian does all the marketing for the restaurant and led the effort to expand the menu beyond classic Italian to incorporate additional cuisines from the Mediterranean region.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
         </p>
       </div>
       <div className={styles.image}>
-        <img src={Mario_and_Adrian_A} alt="Mario and Adrian" />
-        <img src={Mario_and_Adrian_B} alt="Mario and Adrian" />
+        <img src={chef1} alt="Chef Maria" />
+        <img src={chef2} alt="Chef Aught" />
       </div>
     </section>
   );

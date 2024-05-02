@@ -2,7 +2,7 @@ import { FC } from "react";
 import { HashLink } from "react-router-hash-link";
 import styles from "./Nav.module.css"; // Import the CSS module
 import { ReactComponent as LogoImg } from  "../../../assets/Logo.svg";
-import { ReactComponent as BasketImg } from "../../../assets/basket.svg";
+import { ReactComponent as BasketImg } from "../../../assets/icons/emptycart.svg";
 
 const Nav: FC = (props): JSX.Element => {
   return (

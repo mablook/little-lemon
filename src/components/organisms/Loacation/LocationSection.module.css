@@ -1,12 +1,9 @@
 .container {
-    width: 66%;
-    height: 100vh;
-    min-height: 65.1rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: var(--color-white); /* Make sure to define the variable in global.css */
-    gap: 2rem;
+  width: 66%;
+  height: 518px;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
   }
   
   @media (max-width: 966px) {
@@ -32,7 +29,8 @@
   
   .content h1 {
     color: var(--color-primary); /* Define the variable in global.css */
-    width: fit-content;
+    width: 28rem;
+    line-height: 45px;
   }
   
   .content h2 {

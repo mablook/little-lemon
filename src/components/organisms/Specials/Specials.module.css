@@ -27,7 +27,7 @@
   }
   
   .topButton {
-    width: 20rem;
+    width: fit-content;
   }
   
   @media (max-width: 840px) {

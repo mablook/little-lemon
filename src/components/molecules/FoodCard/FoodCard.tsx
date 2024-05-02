@@ -2,7 +2,7 @@ import { FC } from "react";
 
 import styles from "./FoodCard.module.css";
 import Button from "../../atoms/Button/Button";
-import { ReactComponent as DeliveryIcon } from "../../../assets/deliveryIcon.svg";
+import { ReactComponent as DeliveryIcon } from "../../../assets/icons/shopping-basket.svg";
 
 interface FoodCardProps {
   imageUrl: string;
@@ -26,7 +26,6 @@ const FoodCard: FC<FoodCardProps> = ({ imageUrl, title, price, description, ...p
       <div className={styles.callToAction}>
         <Button className={`${styles.highlight} ${styles.buttonHighlight}`}>Order a delivery</Button>
         <span aria-label="Delivery"><DeliveryIcon /></span>
-
       </div>
     </div>
   );

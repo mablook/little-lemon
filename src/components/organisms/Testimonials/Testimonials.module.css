@@ -1,21 +1,17 @@
 .container {
     width: 66%;
-    height: 100vh;
     min-height: 59rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 4.3rem;
-    padding-top: 4rem;
-    position: relative; /* For the ::before pseudo-element */
   }
   
   .container::before {
     content: '';
     width: 100%;
-    height: 100vh;
-    min-height: 59rem;
+    height: 409px;
     position: absolute;
     background-color: rgba(251, 218, 187, .3);
     z-index: -1;

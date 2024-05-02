@@ -1,37 +1,54 @@
 import { FC } from "react";
 import styles from "./Specials.module.css";
-import greekSalad from "../../../assets/greekSalad.jpg";
-import bruchetta from "../../assets/bruchetta.svg";
-import lemonDessert from "../../../assets/lemonDessert.jpg";
 import Button from "../../atoms/Button/Button";
 import FoodCard from "../../molecules/FoodCard/FoodCard";
+import burgerCheese from "../../../assets/foods/burger-with-melted-cheese.jpg";
+import iceCream from "../../../assets/foods/ice-cream-cone-splash.jpg";
+import coffe from "../../../assets/foods/coffee-crema.jpg";
+
+const specials = [
+  {
+    imageUrl: burgerCheese,
+    title: "Burger melted",
+    price: 12.99,
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+  },
+  {
+    imageUrl: iceCream, 
+    title: "Ice Cream Cone",
+    price: 7.99,
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  },
+  {
+    imageUrl: coffe,
+    title: "Coffee Crema",
+    price: 6.99,
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."
+  }
+];
+
 
 const Specials: FC = (props): JSX.Element => {
   return (
     <section {...props} className={styles.container} id="menu">
       <div className={styles.top}>
         <h1>This weeks specials!</h1>
-        <Button className={styles.topButton}>Online Menu</Button>
+        <span className={styles.topButton}>
+        <Button>Online Menu</Button>
+        </span>
       </div>
       <div className={styles.cards}>
-        <FoodCard
-          imageUrl={greekSalad}
-          title="Greek Salad"
-          price={12.99}
-          description="The famous greek salad of crispy lettuce, peppers, olives and our Chicago style feta cheese, garnished with crunchy garlic and rosemary croutons."
-        />
-        <FoodCard
-          imageUrl={lemonDessert}
-          title="Bruchetta"
-          price={7.99}
-          description="Our Bruschetta is made from grilled bread that has been smeared with garlic and seasoned with salt and olive oil."
-        />
-        <FoodCard
-          imageUrl={lemonDessert}
-          title="Lemon Dessert"
-          price={6.99}
-          description="This comes straight from grandma’s recipe book, every last ingredient has been sourced and is as authentic as can be imagined."
-        />
+        {
+          specials.map((special, index) => (
+            <FoodCard
+              key={index}
+              imageUrl={special.imageUrl}
+              title={special.title}
+              price={special.price}
+              description={special.description}
+            />
+          ))
+        }
       </div>
     </section>
   );

@@ -1,7 +1,7 @@
 import { FC } from "react";
 import { useNavigate } from "react-router-dom";
 import styles from "./CallToAction.module.css";
-import restaurant_food from "../../../assets/restaurantfood.jpg";
+import service from "../../../assets/foods/service.jpg";
 import Button from "../../atoms/Button/Button";
 
 const CallToAction: FC = (): JSX.Element => {
@@ -15,10 +15,12 @@ const CallToAction: FC = (): JSX.Element => {
         <p className={styles.leadTxt}>
           We are family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.
         </p>
+        <span className={styles.button}>
         <Button onClick={() => navigate("/bookings")} aria-label="Go to reservation table page.">Reserve a Table</Button>
+        </span>
       </div>
       <div className={styles.image}>
-        <img src={restaurant_food} alt="Restaurant Food" />
+        <img src={service} alt="Restaurant Food" />
       </div>
     </section>
   );
